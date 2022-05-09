@@ -14,8 +14,10 @@ public class IndexOfInteger {
                 System.out.println("Done entering integers into the list");
                 System.out.println("What number are you looking for in the list?");
                 int indexInput = scanner.nextInt();
-                System.out.println(indexInput+ " is at index " + listOfIntegers.indexOf(indexInput));
-                System.out.println(indexInput+ " is at index " + listOfIntegers.lastIndexOf(indexInput));
+                for (int i = 0; i < listOfIntegers.size(); i++){
+                    if(listOfIntegers.get(i) == indexInput)
+                        System.out.println(indexInput+ " is at index " + i);
+                }
                 break;
             }
         }
