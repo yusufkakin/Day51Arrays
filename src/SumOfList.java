@@ -16,16 +16,14 @@ public class SumOfList {
                     System.out.print(listOfIntegers.get(i) + ", ");}
 
                 System.out.print("and " + lastItem + " were the items in the list. The sum of that list is: ");
-                System.out.println(sum(listOfIntegers));
+                System.out.println("\n" + sum(listOfIntegers));
                 break;
             }
-
         }
     }
 
     public static int sum(ArrayList<Integer> list){
         int sum = 0;
-
         for(int i : list)
             sum = sum + i;
         return sum;
